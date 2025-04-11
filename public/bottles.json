@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "brand": "HydroFlow",
+    "model": "PureStream 500",
+    "capacity_ml": 500,
+    "material": "Stainless Steel",
+    "is_insulated": true,
+    "color": "Ocean Blue",
+    "price_usd": 24.99,
+    "in_stock": true
+  },
+  {
+    "id": 2,
+    "brand": "AquaVibe",
+    "model": "ChillMate",
+    "capacity_ml": 750,
+    "material": "Plastic (BPA-free)",
+    "is_insulated": false,
+    "color": "Lime Green",
+    "price_usd": 12.49,
+    "in_stock": true
+  },
+  {
+    "id": 3,
+    "brand": "ClearSip",
+    "model": "UltraHydrate",
+    "capacity_ml": 1000,
+    "material": "Glass",
+    "is_insulated": false,
+    "color": "Transparent",
+    "price_usd": 18.75,
+    "in_stock": false
+  },
+  {
+    "id": 4,
+    "brand": "EverCool",
+    "model": "FrostGuard 600",
+    "capacity_ml": 600,
+    "material": "Aluminum",
+    "is_insulated": true,
+    "color": "Matte Black",
+    "price_usd": 22.00,
+    "in_stock": true
+  },
+  {
+    "id": 5,
+    "brand": "DrinkWell",
+    "model": "EcoFlow",
+    "capacity_ml": 650,
+    "material": "Recycled Plastic",
+    "is_insulated": false,
+    "color": "Sunset Orange",
+    "price_usd": 9.95,
+    "in_stock": true
+  }
+]
