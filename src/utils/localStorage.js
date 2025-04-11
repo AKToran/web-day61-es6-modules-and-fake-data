@@ -2,7 +2,7 @@ const getCartFromLocalStorage = () => {
   const cartStorage = localStorage.getItem("cart");
   let cartData = JSON.parse(cartStorage);
   if (!cartData) cartData = [];
-  console.log(cartData);
+  // console.log(cartData);
 
   return cartData;
 };
