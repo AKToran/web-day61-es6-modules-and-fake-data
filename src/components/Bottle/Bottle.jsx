@@ -11,7 +11,7 @@ const Bottle = ({bottle, handleSetCart}) => {
       <p>Available: {stock}</p>
       <button onClick={() => {
         handleSetCart(bottle)
-      }}>Buy Now</button>
+      }}>Add to Cart</button>
     </div>
   );
 };

@@ -7,12 +7,29 @@ const getCartFromLocalStorage = () => {
   return cartData;
 };
 
+const saveCartToLocalStorage = (cart) => {
+  if(cart.length === 0){
+    localStorage.clear("cart")
+  }
+  else{
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }
+}
+
 const setCartToLocalStorage = (id) => {
   const cart = getCartFromLocalStorage();
   cart.push(id);
 
-  const cartString = JSON.stringify(cart);
-  localStorage.setItem("cart", cartString);
+  saveCartToLocalStorage(cart)
 };
 
-export { getCartFromLocalStorage, setCartToLocalStorage };
+
+const removeItemFromLocalStorage = id =>{
+  const cart = getCartFromLocalStorage();
+
+  const remainingCart = cart.filter(cid => cid != id);
+
+  saveCartToLocalStorage(remainingCart);
+}
+
+export { getCartFromLocalStorage, setCartToLocalStorage, removeItemFromLocalStorage };
